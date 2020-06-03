@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f74c748d-7e5d-40ef-a160-00f7fc03a769" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/mysqldb-test/src/main/java/com/mysqldb/test/controllers/CityController.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1cSW3KooGnWu4oxEso3mxW6Ifh0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mysqldb-test" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f74c748d-7e5d-40ef-a160-00f7fc03a769" name="Default Changelist" comment="" />
+      <created>1590522274486</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590522274486</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2075" y="269" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590522374478">
+      <screen x="1920" y="159" width="1368" height="768" />
+    </state>
+    <state x="2075" y="269" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.159.1368.768/0.0.1920.1080@1920.159.1368.768" timestamp="1590522374478" />
+    <state x="2399" y="376" key="FileChooserDialogImpl" timestamp="1591189181944">
+      <screen x="1920" y="159" width="1368" height="768" />
+    </state>
+    <state x="2399" y="376" key="FileChooserDialogImpl/1920.159.1368.768/0.0.1920.1080@1920.159.1368.768" timestamp="1591189181944" />
+  </component>
+</project>
