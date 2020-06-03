@@ -1,9 +1,6 @@
 package com.unisul_service.users.entities;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
@@ -14,8 +11,12 @@ public class UserEntity {
     private Integer id;
     private String name;
 
+    @ManyToOne
+    private CityEntity city;
+
     public UserEntity fromEntity(UserEntity otherEntity) {
         this.setName(otherEntity.getName());
+        this.setCity(otherEntity.getCity());
         return this;
     }
 
@@ -30,6 +31,14 @@ public class UserEntity {
     @Override
     public int hashCode() {
         return Objects.hash(getId());
+    }
+
+    public CityEntity getCity() {
+        return city;
+    }
+
+    public void setCity(CityEntity city) {
+        this.city = city;
     }
 
     public Integer getId() {

@@ -23,7 +23,7 @@ public class UserService {
     }
 
     public UserEntity update(UserEntity userEntity, Integer id) {
-        Assert.notNull(id, "ID must not be null, asshole!");
+//        Assert.notNull(id, "ID must not be null, asshole!");
         Optional<UserEntity> optEntity = repository.findById(id);
 
         if (optEntity.isEmpty()) {
@@ -34,7 +34,7 @@ public class UserService {
     }
 
     public void delete(Integer id) {
-        Assert.notNull(id, "ID must not be null, asshole!");
+//        Assert.notNull(id, "ID must not be null, asshole!");
 
         Optional<UserEntity> optEntity = repository.findById(id);
         optEntity.ifPresent(userEntity -> repository.delete(userEntity));
