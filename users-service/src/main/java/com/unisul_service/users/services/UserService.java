@@ -8,6 +8,7 @@ import org.springframework.util.Assert;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.function.Function;
 
 @Service
 public class UserService {
@@ -16,6 +17,14 @@ public class UserService {
 
     public List<UserEntity> getAll() {
         return repository.findAll();
+    }
+
+    public List<UserEntity> findStartingWithName(String fragment) {
+        return handleFindByNameLike(fragment, s -> s.concat("%"));
+    }
+
+    public List<UserEntity> findEndingWithName(String fragment) {
+        return handleFindByNameLike(fragment, "%"::concat);
     }
 
     public UserEntity store(UserEntity userEntity) {
@@ -38,5 +47,14 @@ public class UserService {
 
         Optional<UserEntity> optEntity = repository.findById(id);
         optEntity.ifPresent(userEntity -> repository.delete(userEntity));
+    }
+
+    protected List<UserEntity> handleFindByNameLike(
+            String filter,
+            Function<String, String> onFilter
+    ) {
+        // TODO use spring builtin Starting and Ending functions
+        String parsedFilter = onFilter.apply(filter.replace("%", "\\%"));
+        return repository.findByNameLike(parsedFilter);
     }
 }

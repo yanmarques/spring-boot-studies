@@ -14,7 +14,18 @@ public class UserController {
     private UserService service;
 
     @GetMapping
-    public List<UserEntity> index() {
+    public List<UserEntity> index(
+            @RequestParam(required = false) String nameEnds,
+            @RequestParam(required = false) String nameStarts
+    ) {
+        if (nameEnds !=  null && ! nameEnds.isEmpty()) {
+            return service.findEndingWithName(nameEnds);
+        }
+
+        if (nameStarts != null && ! nameStarts.isEmpty()) {
+            return service.findStartingWithName(nameStarts);
+        }
+
         return service.getAll();
     }
 

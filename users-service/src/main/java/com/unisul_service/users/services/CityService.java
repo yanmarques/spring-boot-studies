@@ -1,6 +1,7 @@
 package com.unisul_service.users.services;
 
 import com.unisul_service.users.entities.CityEntity;
+import com.unisul_service.users.entities.UserEntity;
 import com.unisul_service.users.repositories.CityRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
